@@ -12,9 +12,26 @@ import Foundation
 struct Pokemon: Codable {
     var name: String
     var types: [Types]
+    var pokedexEntry: Int
+    var imageURL: Sprites
     
     struct Types: Codable {
-        var name: String
+        var type: PokemonType
+        
+        struct PokemonType: Codable {
+            var name: String
+        }
+    }
+    
+    struct Sprites: Codable {
+        var front_default: String
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case types
+        case pokedexEntry = "id"
+        case imageURL = "sprites"
     }
 }
 

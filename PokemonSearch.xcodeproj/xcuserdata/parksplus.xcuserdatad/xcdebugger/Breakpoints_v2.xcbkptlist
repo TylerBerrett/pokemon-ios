@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F46AF4C2-E36E-4650-9F0C-63A11AEEEC19"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DB3F0A4-7D54-40CB-936F-D7B37EFD2277"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PokemonSearch/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "6DB3F0A4-7D54-40CB-936F-D7B37EFD2277 - b06bc4867547ab54"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PokemonSearch.ViewController.textField.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "PokemonSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/parksplus/Desktop/learn-ios/PokemonSearch/PokemonSearch/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "6DB3F0A4-7D54-40CB-936F-D7B37EFD2277 - 3daa10e2fa7b8740"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PokemonSearch.ViewController.textField.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "PokemonSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/parksplus/Desktop/learn-ios/PokemonSearch/PokemonSearch/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "6DB3F0A4-7D54-40CB-936F-D7B37EFD2277 - 1b8c15ffacfd4e51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PokemonSearch.ViewController.textField.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "PokemonSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/parksplus/Desktop/learn-ios/PokemonSearch/PokemonSearch/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  uuid = "6DB3F0A4-7D54-40CB-936F-D7B37EFD2277 - 23980fdee85e1120"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PokemonSearch.ViewController.textField.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "PokemonSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/parksplus/Desktop/learn-ios/PokemonSearch/PokemonSearch/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "6DB3F0A4-7D54-40CB-936F-D7B37EFD2277 - 69b8eec116211aa1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PokemonSearch.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PokemonSearch.ViewController"
+                  moduleName = "PokemonSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/parksplus/Desktop/learn-ios/PokemonSearch/PokemonSearch/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "485">
+               </Location>
+               <Location
+                  uuid = "6DB3F0A4-7D54-40CB-936F-D7B37EFD2277 - 9b70445ab6a0ed2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PokemonSearch.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PokemonSearch.ViewController&gt;"
+                  moduleName = "PokemonSearch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/parksplus/Desktop/learn-ios/PokemonSearch/PokemonSearch/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "426">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

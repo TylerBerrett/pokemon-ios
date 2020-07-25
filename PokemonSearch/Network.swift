@@ -12,20 +12,15 @@ class NetworkManager {
     
     private let base_url = "https://pokeapi.co/api/v2/pokemon/"
     
-    func getPokemon(pokemonName: String) {
+    func getPokemon(pokemonName: String, completionHandler: @escaping (Pokemon) -> Void) {
         let url = URL(string: base_url + pokemonName)!
         let session = URLSession.shared.dataTask(with: url, completionHandler: { data, response, error in
             
             let httpResponse = response as? HTTPURLResponse
             if (httpResponse?.statusCode == 200 && response?.mimeType == "application/json") {
                 
-                let json = try? JSONSerialization.jsonObject(with: data!, options: [])
-                
-                let jsonData = (json as? String ?? "").data(using: .utf8)!
-                
-                let pkmn = try! JSONDecoder().decode(Pokemon.self, from: json as! Data)
-                
-                print(pkmn)
+                let pkmn = try! JSONDecoder().decode(Pokemon.self, from: data!)
+                completionHandler(pkmn)
                 
                 
             } else {
