@@ -13,7 +13,8 @@ class NetworkManager {
     private let base_url = "https://pokeapi.co/api/v2/pokemon/"
     
     func getPokemon(pokemonName: String, completionHandler: @escaping (Pokemon) -> Void) {
-        let url = URL(string: base_url + pokemonName)!
+        let query = pokemonName.replacingOccurrences(of: " ", with: "").lowercased()
+        let url = URL(string: base_url + query)!
         let session = URLSession.shared.dataTask(with: url, completionHandler: { data, response, error in
             
             let httpResponse = response as? HTTPURLResponse

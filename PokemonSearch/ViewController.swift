@@ -11,14 +11,31 @@ import UIKit
 class ViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var pkmnName: UITextView!
+    @IBOutlet weak var pkmnNumber: UITextView!
+    @IBOutlet weak var pkmnTypes: UITextView!
+    @IBOutlet weak var loadingIcon: UIActivityIndicatorView!
+    @IBOutlet weak var addPkmn: UIButton!
+    
+    var pokemonList = Array<Pokemon>()
+    
+    var currentPkmn: Pokemon?
+    
+    @IBAction func addPkmn(_ sender: Any) {
+        if (currentPkmn != nil) {
+            pokemonList.append(currentPkmn!)
+        }
+        print(pokemonList.count)
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         searchBar.delegate = self
-        
     }
+    
+    
     
     var searchText = ""
     
@@ -30,15 +47,28 @@ class ViewController: UIViewController, UISearchBarDelegate {
         
         NetworkManager().getPokemon(pokemonName: searchText.lowercased()) { (pkmn) in
             
+            self.currentPkmn = pkmn
+            
             DispatchQueue.main.async {
+                self.loadingIcon.startAnimating()
                 let url:NSURL? = NSURL(string: pkmn.imageURL.front_default)
                 let data:NSData? = NSData(contentsOf : url! as URL)
                 let image = UIImage(data : data! as Data)
                 self.imageView.image = image
-                self.textView.text = pkmn.name
+                self.loadingIcon.stopAnimating()
+                self.pkmnName.text = pkmn.name.capitalized
+                self.pkmnNumber.text = String(pkmn.pokedexEntry)
+                var types = Array<String>()
+                pkmn.types.forEach { type in
+                    types.append(type.type.name)
+                }
+                self.pkmnTypes.text = types.joined(separator: ", ")
+                self.view.endEditing(true)
             }
             
         }
+        
+        
         
         
         

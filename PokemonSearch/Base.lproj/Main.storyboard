@@ -15,39 +15,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" text="" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="hKW-7i-jmg">
+                            <searchBar contentMode="redraw" text="" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="hKW-7i-jmg">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gcb-rd-Bqc"/>
+                                </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CFy-bv-qMN">
-                                <rect key="frame" x="57" y="88" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CFy-bv-qMN">
+                                <rect key="frame" x="57" y="101" width="300" height="300"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59f-zL-dY1">
-                                <rect key="frame" x="186" y="411" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1XD-yC-beq">
-                                <rect key="frame" x="67" y="414" width="290" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmb-gT-dFb">
+                                <rect key="frame" x="87" y="409" width="240" height="29"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="pCZ-kg-nmq"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxi-io-kw5">
+                                <rect key="frame" x="87" y="433" width="240" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="fVy-CL-fUD"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnM-Dr-kAd">
+                                <rect key="frame" x="87" y="457" width="240" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="zNN-ac-RoK"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="dQu-Pb-hVY">
+                                <rect key="frame" x="197" y="241" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqZ-BW-B8K">
+                                <rect key="frame" x="20" y="827" width="374" height="35"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="16b-TT-EpM"/>
+                                </constraints>
+                                <state key="normal" title="Add To Team">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPkmn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sTf-rw-l3v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hKW-7i-jmg" firstAttribute="centerX" secondItem="CFy-bv-qMN" secondAttribute="centerX" id="1gA-8K-dtT"/>
+                            <constraint firstItem="CFy-bv-qMN" firstAttribute="top" secondItem="hKW-7i-jmg" secondAttribute="bottom" constant="13" id="7F6-r8-Age"/>
+                            <constraint firstItem="pmb-gT-dFb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="A0i-se-Fu1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VnM-Dr-kAd" secondAttribute="bottom" constant="372" id="BcH-7c-fwI"/>
+                            <constraint firstItem="pmb-gT-dFb" firstAttribute="top" secondItem="CFy-bv-qMN" secondAttribute="bottom" constant="8" id="Fmc-GN-O1P"/>
+                            <constraint firstItem="Rxi-io-kw5" firstAttribute="leading" secondItem="VnM-Dr-kAd" secondAttribute="leading" id="Hpd-Uq-hRP"/>
+                            <constraint firstItem="pmb-gT-dFb" firstAttribute="trailing" secondItem="Rxi-io-kw5" secondAttribute="trailing" id="KNY-fL-Kke"/>
+                            <constraint firstItem="MqZ-BW-B8K" firstAttribute="centerX" secondItem="VnM-Dr-kAd" secondAttribute="centerX" id="LQn-bB-TLl"/>
+                            <constraint firstItem="hKW-7i-jmg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MX1-xH-Ljr"/>
+                            <constraint firstItem="dQu-Pb-hVY" firstAttribute="centerY" secondItem="CFy-bv-qMN" secondAttribute="centerY" id="Wh2-1J-Dmf"/>
+                            <constraint firstItem="CFy-bv-qMN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="XIu-mx-1He"/>
+                            <constraint firstItem="MqZ-BW-B8K" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZEE-BE-0tM"/>
+                            <constraint firstItem="VnM-Dr-kAd" firstAttribute="top" secondItem="Rxi-io-kw5" secondAttribute="bottom" constant="-5" id="chD-bR-JlG"/>
+                            <constraint firstItem="hKW-7i-jmg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f70-io-6KZ"/>
+                            <constraint firstItem="Rxi-io-kw5" firstAttribute="trailing" secondItem="VnM-Dr-kAd" secondAttribute="trailing" id="iqh-Jt-Lm1"/>
+                            <constraint firstItem="CFy-bv-qMN" firstAttribute="centerX" secondItem="pmb-gT-dFb" secondAttribute="centerX" id="pem-wf-cCt"/>
+                            <constraint firstItem="MqZ-BW-B8K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qt0-mi-MIt"/>
+                            <constraint firstItem="dQu-Pb-hVY" firstAttribute="centerX" secondItem="pmb-gT-dFb" secondAttribute="centerX" id="rEn-Iz-tKS"/>
+                            <constraint firstItem="hKW-7i-jmg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rKf-QQ-4X1"/>
+                            <constraint firstItem="Rxi-io-kw5" firstAttribute="top" secondItem="pmb-gT-dFb" secondAttribute="bottom" constant="-5" id="sba-Jp-M14"/>
+                            <constraint firstItem="pmb-gT-dFb" firstAttribute="leading" secondItem="Rxi-io-kw5" secondAttribute="leading" id="zkB-ay-Xr8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addPkmn" destination="MqZ-BW-B8K" id="Esy-f9-nBO"/>
                         <outlet property="imageView" destination="CFy-bv-qMN" id="t73-wv-6By"/>
+                        <outlet property="loadingIcon" destination="dQu-Pb-hVY" id="ydm-dt-4Z5"/>
+                        <outlet property="pkmnName" destination="pmb-gT-dFb" id="Hfc-bv-rt1"/>
+                        <outlet property="pkmnNumber" destination="Rxi-io-kw5" id="qtR-zE-dhm"/>
+                        <outlet property="pkmnTypes" destination="VnM-Dr-kAd" id="9iq-lR-bY3"/>
                         <outlet property="searchBar" destination="hKW-7i-jmg" id="Vef-7z-NPR"/>
-                        <outlet property="textView" destination="1XD-yC-beq" id="Cy7-a8-2ju"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
