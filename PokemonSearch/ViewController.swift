@@ -17,22 +17,26 @@ class ViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var loadingIcon: UIActivityIndicatorView!
     @IBOutlet weak var addPkmn: UIButton!
     
+    var delegate: PokemonDelegate? = nil
+    
+    
     var pokemonList = Array<Pokemon>()
     
     var currentPkmn: Pokemon?
     
     @IBAction func addPkmn(_ sender: Any) {
-        if (currentPkmn != nil) {
-            pokemonList.append(currentPkmn!)
+        if (currentPkmn != nil && self.delegate != nil) {
+            self.delegate?.onPkmnReady(pkmn: currentPkmn!)
         }
-        print(pokemonList.count)
-        
+        self.dismiss(animated: true)
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
+    
+        
     }
     
     

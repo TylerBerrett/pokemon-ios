@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0190CE3C24D4B25E00C4F92F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190CE3B24D4B25E00C4F92F /* HomeController.swift */; };
+		0190CE4024D4D12000C4F92F /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190CE3F24D4D12000C4F92F /* PokemonTableViewCell.swift */; };
 		01C22E1824C8F192009714E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C22E1724C8F192009714E0 /* AppDelegate.swift */; };
 		01C22E1A24C8F192009714E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C22E1924C8F192009714E0 /* SceneDelegate.swift */; };
 		01C22E1C24C8F192009714E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C22E1B24C8F192009714E0 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0190CE3B24D4B25E00C4F92F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		0190CE3F24D4D12000C4F92F /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
 		01C22E1424C8F192009714E0 /* PokemonSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C22E1724C8F192009714E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01C22E1924C8F192009714E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			children = (
 				01C22E1724C8F192009714E0 /* AppDelegate.swift */,
 				01C22E1924C8F192009714E0 /* SceneDelegate.swift */,
+				0190CE3B24D4B25E00C4F92F /* HomeController.swift */,
 				01C22E1B24C8F192009714E0 /* ViewController.swift */,
 				01C22E1D24C8F192009714E0 /* Main.storyboard */,
 				01C22E2024C8F195009714E0 /* Assets.xcassets */,
@@ -69,6 +74,7 @@
 				01C22E2524C8F195009714E0 /* Info.plist */,
 				01C22E2B24C8FB28009714E0 /* Network.swift */,
 				01C22E2D24C903E1009714E0 /* Pokemon.swift */,
+				0190CE3F24D4D12000C4F92F /* PokemonTableViewCell.swift */,
 			);
 			path = PokemonSearch;
 			sourceTree = "<group>";
@@ -145,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				01C22E2E24C903E1009714E0 /* Pokemon.swift in Sources */,
+				0190CE4024D4D12000C4F92F /* PokemonTableViewCell.swift in Sources */,
 				01C22E1C24C8F192009714E0 /* ViewController.swift in Sources */,
+				0190CE3C24D4B25E00C4F92F /* HomeController.swift in Sources */,
 				01C22E1824C8F192009714E0 /* AppDelegate.swift in Sources */,
 				01C22E2C24C8FB28009714E0 /* Network.swift in Sources */,
 				01C22E1A24C8F192009714E0 /* SceneDelegate.swift in Sources */,
